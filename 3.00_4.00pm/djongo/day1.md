@@ -1,4 +1,35 @@
 
+# ----------------------------
+Flask vs Django  Difference
+# ----------------------------
+
+
+| Feature           | Flask                                                    | Django                                                         |
+| ----------------- | -------------------------------------------------------- | -------------------------------------------------------------- |
+| Framework Type    | Micro-framework (lightweight, minimal)                   | Full-stack framework (batteries included)                      |
+| Flexibility       | Highly flexible, developer chooses everything            | Strict structure, follows predefined rules                     |
+| Built-in Features | Limited (no built-in ORM, admin, auth)                   | Comes with ORM, admin panel, authentication, security          |
+| Development Speed | Slower for large apps (manual setup needed)              | Faster for large apps (ready-to-use components)                |
+| Use Case          | Best for APIs, microservices, AI/ML apps, small projects | Best for large applications like e-commerce, ERP, social media |
+
+
+# --------------------------------------------
+MVC vs MVT Architecture Difference
+# --------------------------------------------
+
+
+| Feature           | MVC (Model–View–Controller)                      | MVT (Model–View–Template)                                |
+| ----------------- | ------------------------------------------------ | -------------------------------------------------------- |
+| Full Form         | Model – View – Controller                        | Model – View – Template                                  |
+| Used In           | Flask, Spring, ASP.NET, Laravel                  | Django                                                   |
+| Control Flow      | Controller handles user requests                 | Django framework handles control internally              |
+| View Role         | UI + presentation logic                          | Only presentation (HTML rendering)                       |
+| Controller Role   | Acts as middle layer between Model and View      | No explicit controller (Django handles it automatically) |
+| Developer Control | More manual control over flow                    | Framework manages flow internally                        |
+| Complexity        | Slightly more complex due to explicit controller | Simpler for web apps using Django                        |
+
+
+# ----------------------------
 
 # _____________________________________________________
     # Django installation AND project setup
