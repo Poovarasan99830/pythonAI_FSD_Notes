@@ -60,12 +60,14 @@ django-admin startproject myproject → creates a new folder myproject.
 This folder contains the **project configuration files**.
 
 🔹 `__init__.py`---->* Empty file but **makes Python treat this folder as a package**.
+
 🔹 `settings.py`---->* The **heart of the project**.
                      * Configure database, installed apps, middleware, templates, static files, etc.
 
 🔹 `urls.py`    ---->* The **URL roadmap**.* Maps URLs to views.
 
 🔹 `wsgi.py` and `asgi.py`---->* **Server integration files**.
+
                           ---->* WSGI → traditional web servers.
                           ----->* ASGI → asynchronous servers (websockets, async views).
 
@@ -147,10 +149,10 @@ myapp/
 > “In Django, the project folder contains `manage.py` to run commands.
 > The inner project folder has all configuration files like `settings.py`, `urls.py`, `wsgi/asgi.py`.
 > Each app has its own 
-`models.py`, 
-`views.py`,
- `templates` folder, and 
- `admin.py` for modularity.
+    `models.py`, 
+    `views.py`,
+    `templates` folder, and 
+    `admin.py` for modularity.
 > This structure is clear, organized, and scalable for both small and large projects.”
 
 
@@ -174,11 +176,13 @@ What is a URL parameter-->
 
 | Type    | Syntax        | Example URL          | Value       |
 | ------- | ------------- | -------------------- | ----------- |
-| Integer | `<int:id>`    | `/user/10/`          | 10          |
-| String  | `<str:name>`  | `/user/john/`        | john        |
-| Slug    | `<slug:post>` | `/post/hello-world/` | hello-world |
-| UUID    | `<uuid:id>`   | `/user/uuid/`        | uuid value  |
-| Path    | `<path:file>` | `/file/a/b/c/`       | a/b/c       |
+| Integer | `<int:id>`    | `/user/10/`          | 10          |Only numbers (integers) are allowed.
+| String  | `<str:name>`  | `/user/john/`        | john        |Accepts text (letters) — no slashes /.
+| Slug    | `<slug:post>` | `/post/hello-world/` | hello-world |Clean URL format → letters + numbers + hyphen (-)
+| UUID    | `<uuid:id>`   | `/user/uuid/`        | uuid value  |Unique long ID (random string) — used for security & uniqueness
+                                                                 UUID = Universally Unique Identifier
+                                                                 
+| Path    | `<path:file>` | `/file/a/b/c/`       | a/b/c       |Accepts full path including slashes
 
 
 Query Parameters
